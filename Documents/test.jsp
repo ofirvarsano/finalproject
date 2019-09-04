@@ -1,18 +1,24 @@
+<!DOCTYPE html>
 <html>
-<head><title>First JSP</title></head>
 <body>
-  <%
-    double num = Math.random();
-    if (num > 0.95) {
-  %>
-      <h2>You'll have a luck day!</h2><p>(<%= num %>)</p>
-  <%
-    } else {
-  %>
-      <h2>Well, life goes on ... </h2><p>(<%= num %>)</p>
-  <%
-    }
-  %>
-  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
+
+<h2>JavaScript Array Sort</h2>
+
+<p>The sort() method sorts an array alphabetically.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.sort();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
 </body>
 </html>
